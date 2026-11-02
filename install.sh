@@ -28,6 +28,7 @@ PY
 
 mkdir -p "$EXT"
 cp extension/*.js extension/metadata.json extension/stylesheet*.css "$EXT/"
+rm -rf "$EXT/iconos" && cp -r extension/iconos "$EXT/"
 activar
 
 echo "Servidores de desarrollo instalado. Cierra sesión y vuelve a entrar para que GNOME lo cargue."

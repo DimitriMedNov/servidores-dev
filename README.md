@@ -7,7 +7,7 @@ memoria sin que lo sepas.
 ![Menú con dos servidores prendidos](capturas/menu.png)
 
 ## Qué hace
-- **En la barra**, junto al nombre de la app abierta: un icono con cuántos servidores hay prendidos.
+- **En la barra**, junto al nombre de la app abierta: un ícono `</>` con cuántos servidores hay prendidos.
   Si no hay ninguno, desaparece y no ocupa lugar.
 - **Al hacer clic**, la lista de servidores:
   - Proyecto (el `name` de su `package.json`, o el nombre de la carpeta) y puerto.

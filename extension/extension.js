@@ -55,7 +55,7 @@ function abrirEnNavegador(url) {
 
 const Indicador = GObject.registerClass(
 class Indicador extends PanelMenu.Button {
-    _init() {
+    _init(icono) {
         super._init(0.0, 'Servidores de desarrollo');
         this._servidores = [];
         this._apagando = new Set(); // pids a los que ya se les mandó apagar
@@ -64,7 +64,7 @@ class Indicador extends PanelMenu.Button {
         this._buscando = false;
 
         const caja = new St.BoxLayout({style_class: 'panel-status-menu-box'});
-        caja.add_child(new St.Icon({icon_name: 'network-server-symbolic', style_class: 'system-status-icon'}));
+        caja.add_child(new St.Icon({gicon: Gio.icon_new_for_string(icono), style_class: 'system-status-icon'}));
         this._cuenta = etiqueta('0', 'sd-cuenta');
         caja.add_child(this._cuenta);
         this.add_child(caja);
@@ -193,7 +193,7 @@ class Indicador extends PanelMenu.Button {
 
 export default class ServidoresDev extends Extension {
     enable() {
-        this._indicador = new Indicador();
+        this._indicador = new Indicador(GLib.build_filenamev([this.path, 'iconos', 'servidores.svg']));
         // A la izquierda, al final: queda junto al nombre de la app abierta.
         Main.panel.addToStatusArea(this.uuid, this._indicador, -1, 'left');
     }
