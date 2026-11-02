@@ -1,0 +1,19 @@
+/* Servidores de desarrollo, tema oscuro (también es el respaldo si GNOME no pide una variante). */
+.sd-cuenta { padding-left: 4px; font-weight: bold; }
+
+/* Las filas fijas del menú salen atenuadas por GNOME; el color explícito las devuelve al blanco. */
+.sd-titulo { font-weight: bold; color: #ffffff; }
+.sd-proyecto { font-weight: bold; color: #ffffff; padding-right: 12px; }
+.sd-puerto { font-family: monospace; color: #99c1f1; }
+.sd-detalle { font-size: 0.85em; color: #c0bfbc; }
+.sd-olvidado { color: #f6d32d; }
+
+.sd-seccion { font-size: 0.85em; color: #c0bfbc; padding-right: 12px; }
+.sd-linea { height: 1px; background-color: rgba(255, 255, 255, 0.15); }
+
+/* 44 x 44 px: área cómoda para el clic. */
+.sd-boton { width: 44px; height: 44px; border-radius: 22px; margin-left: 2px; color: #ffffff; }
+.sd-boton:focus { box-shadow: inset 0 0 0 2px #78aeed; }
+.sd-abrir:hover, .sd-abrir:focus { background-color: rgba(255, 255, 255, 0.12); }
+.sd-apagar:hover, .sd-apagar:focus { background-color: rgba(237, 51, 59, 0.85); }
+.sd-apagar:insensitive { color: rgba(255, 255, 255, 0.35); }

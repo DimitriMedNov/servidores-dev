@@ -1,0 +1,8 @@
+{
+  "uuid": "servidores-dev@dimitrimednov.github.io",
+  "name": "Servidores de desarrollo",
+  "description": "Lista en la barra de arriba los servidores de desarrollo que siguen prendidos (vite, next, astro…), con su puerto, proyecto y memoria. Ábrelos en Brave o apágalos con un clic.",
+  "shell-version": ["48", "49", "50", "51"],
+  "url": "https://github.com/DimitriMedNov/servidores-dev",
+  "version": 1
+}
